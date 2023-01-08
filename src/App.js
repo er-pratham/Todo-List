@@ -77,7 +77,7 @@ function App() {
       </div>
     </div>
     <footer>
-      ©️ Todo List Web App. All rights reserved by Pratham Saxena.
+      ©️ Todo List Web App. All rights are reserved by Pratham Saxena.
     </footer>
     </div>
   );
