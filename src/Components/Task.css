@@ -1,0 +1,29 @@
+.list
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.list button
+{
+    border-radius: 50%;
+    width: 2vw;
+    height: 3.5vh;
+    margin-left: 4vw;
+    margin-top: 0.2vw;
+    /* color: white; */
+    border: none;
+}
+.list button:hover
+{
+    background-color:red;
+    cursor: pointer;
+    color: aliceblue;
+}
+.list li
+{
+    letter-spacing: 1px;
+    margin-left: 2vw;
+    color: darkgray;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
