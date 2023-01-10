@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import './App.css';
 import TasksList from './Components/TasksList';
 import Tooltip from '@mui/material/Tooltip';
-
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 function App() {
   const [task,setTask]=useState([]);
   const[warn,setWarn]=useState("");
@@ -60,13 +60,15 @@ function App() {
     <div className="App">
     <div className="container">
       <h1>ToDo List</h1>
-      <div className="warn"><h4>{warn}</h4></div>
+      <div className="warn"><h7>{warn}</h7></div>
       <div className="input">
         <input type="text" name="" id="" autoComplete='off' value={input_data} placeholder='Add Your New Task' onChange={input_change}/>
+        </div>
         <Tooltip title="Add Task">
-        <button onClick={addTask}>+</button>
+          <button className='add_button'>
+        <ControlPointIcon onClick={addTask} />
+        </button>
         </Tooltip>
-      </div>
       <div className="displayTasks">
       <ul>
           {task.map((eachTask,index)=>{
@@ -75,7 +77,7 @@ function App() {
       </ul>
       </div>
       <div className="taskindex">
-      <span>You have {task.length} pending task</span>
+      <h7>{task.length}: Task Left</h7>
       <Tooltip title="Clear all Task"><button onClick={clearAll}>Clear All</button></Tooltip>
       </div>
     </div>

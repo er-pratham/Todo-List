@@ -25,7 +25,7 @@
   font-family: 'Dosis', sans-serif;
   background-color: darkgray;
   margin-top: 2vh;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   color: white;
 }
 .warn
@@ -37,40 +37,42 @@
 }
 .input
 {
-  width: 25vw;
-  margin: auto;
+  width: 30vw;
   margin-top: 4vh;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-
+  /* border: 2px solid red; */
 }
 .input input
 {
+  width: 20vw;
+  display: block;
+  height: max-content;
+  height: max-content;
+  color: black;
+  margin: auto;
   border: none;
   border-bottom: 2px solid darkgray;
   text-align: center;
   outline: none;
 }
-.input button
+.add_button
 {
-  border-radius: 50%;
-  width: 2.5vw;
-  height: 4vh;
-  margin-left: 1vw;
-  background-color: darkgray;
-  color:white;
+  background: none;
+  color: darkgray;
   border: none;
-}
-.input button:hover
-{
-  background-color: greenyellow;
+  position: relative;
+  top: -2.5vh;
+  left: 25vw;
   cursor: pointer;
+}
+.add_button:hover
+{
+  color: green;
 }
 .displayTasks
 {
   /* border: 2px solid black; */
   width: 30vw;
-  margin-top: 4vh;
+  margin-top: 2vh;
   height: 45vh;
 }
 .displayTasks ul
@@ -80,25 +82,27 @@
 }
 .taskindex
 {
-  margin-top: 4vh;
+/* border:2px solid black; */
+ width: 28vw;
+  margin: auto;
+  margin-top: 6vh;
 }
-.taskindex span
+.taskindex h7
 {
-  margin-left: 1vw;
-  font-size: 1.3rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: darkseagreen;
+  color: peru;
 }
 .taskindex button
 {
   float: right;
-  height: 3vh;
-  width: 4vw;
-  margin-right: 1vw;
+  border-radius: 5px;
+  padding: 2px;
 }
 .taskindex button:hover
 {
   cursor: pointer;
+  background-color: red;
+  color: white;
+ 
 }
 footer
 {
@@ -106,88 +110,67 @@ footer
   top: 95vh;
 
 }
-@media only screen and (max-width: 1341px) {
-  .taskindex button{
-   width: max-content;
-    padding: 2px;
-  }
-}
-@media only screen and (max-width: 926px) {
+@media screen and (max-width: 768px) {
   .container
   {
-  width: 35vw;
+    height: 75vh;
+    width: 50vw;
   }
-  .input
+  .add_button
   {
-    width: 30vw;
-  }
-  .warn
-  {
-  width: 40vw;
-  }
-}
-@media only screen and (max-width: 698px) {
- .taskindex span{
-  font-size: 1.2rem;
- }
-}
-@media only screen and (max-width: 653px) {
-  .container
-  {
-  width: 50vw;
+    left: 45vw;
   }
   .warn
   {
     width: 50vw;
   }
- }
- @media only screen and (max-width: 508px) {
+  .input
+  {
+    width: 50vw;
+  }
+  .input input
+  {
+    width: 40vw;
+  }
+  .displayTasks
+  {
+    width: 50vw;
+    height: 45vh;
+  }
+  .taskindex
+  {
+    width: 48vw;
+  }
+}
+@media screen and (max-width: 480px) {
   .container
   {
-  width: 60vw;
+    height: 75vh;
+    width: 70vw;
   }
-  .warn
+  .add_button
   {
-    width: 60vw;
-  }
- }
- @media only screen and (max-width: 420px) {
-  .container
-  {
-  width: 70vw;
+    left: 65vw;
   }
   .warn
   {
     width: 70vw;
   }
- }
- @media only screen and (max-width: 375px) {
-  .container
+  .input
   {
-  width: 80vw;
+    width: 70vw;
   }
-  .warn
+  .input input
   {
-    width: 80vw;
+    width: 60vw;
   }
- }
- @media only screen and (max-width: 313px) {
-  .container
+  .displayTasks
   {
-  width: 90vw;
+    width: 70vw;
+    height: 45vh;
   }
-  .warn
+  .taskindex
   {
-    width: 90vw;
+    width: 68vw;
   }
- }
- @media only screen and (max-width: 277px) {
-  .container
-  {
-  width: 100vw;
-  }
-  .warn
-  {
-    width: 100vw;
-  }
- }
+}
