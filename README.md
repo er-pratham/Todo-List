@@ -40,7 +40,7 @@ To Deploy Again:
 
 ## Tech Stack
 
-**Client:** React, HTML , CSS , Javascript
+**Client:** React, HTML , CSS , Javascript, Material UI
 
 **Compiler:** BABEL, JSX
 
